@@ -159,6 +159,64 @@ springboot-bankinc/
 ├─ pom.xml
 └─ README.md
 ```
+## 🟫 Pruebas Unitarias
+
+El proyecto incluye pruebas unitarias utilizando **JUnit 5** y **Mockito**.  
+Actualmente cubre:
+
+### ✔️ Pruebas de CardService
+
+### ✔️ Pruebas de TransactionService 
+
+> El objetivo es dejar **90%+ de cobertura** en servicios antes del nivel final.
+
+---
+
+## 📝 Estado del proyecto
+
+Este proyecto se encuentra **100% funcional**, probado con Swagger UI y Postman,  
+con la base de datos MySQL correctamente generada vía JPA.
+
+Las pruebas unitarias están **en proceso de completar cobertura**,  
+pero el esqueleto del sistema está completamente sólido, modular y validado.
+
+## ✔️ Checklist de funcionalidades implementadas
+
+Este proyecto cumple con todos los requisitos funcionales solicitados para el reto técnico de **Bank Inc**:
+
+---
+
+## 🟦 Funcionalidades de Tarjetas
+
+- [x] **Generar número de tarjeta** .
+- [x] **Crear tarjeta** .
+- [x] **Activar tarjeta**.
+- [x] **Bloquear tarjeta**.
+- [x] **Recargar saldo**.
+- [x] **Consultar saldo** de la tarjeta.
+---
+
+## 🟩 Funcionalidades de Transacciones
+
+- [x] **Realizar compra** (purchase).
+- [x] **Consultar transacción** por ID.
+- [x] **Anulación de transacción**:
+
+---
+
+## 🟧 Arquitectura y buenas prácticas aplicadas
+
+- [x] API REST con **Spring Boot 3**.
+- [x] Persistencia con **Spring Data JPA + MySQL**.
+- [x] Manejo centralizado de errores con `GlobalExceptionHandler`.
+- [x] Uso de DTOs para requests (POST/PUT).
+- [x] Transacciones  `@Transactional`.
+- [x] Documentación con **Swagger UI**.
+- [x] Postman Collection incluida.
+- [x] Proyecto estructurado en capas:  
+  `controller / dto / service / repository / entities / exceptions`.
+
+---
 
 ---
 
